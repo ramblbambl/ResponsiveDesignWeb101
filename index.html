@@ -1,0 +1,65 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foundation | Welcome</title>
+    <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
+  </head>
+  <body>
+    <!-- Start Top Bar -->
+    <div class="top-bar">
+      <div class="top-bar-left">
+        <ul class="menu">
+          <li class="menu-text">Responsive Design</li>
+          <li><a href="index.html">Register</a></li>
+          <li><a href="delete.html">Delete</a></li>
+          <li><a href="control.html">Display Data</a></li>
+          <li><a href="data.php">Display all User Data</a></li>
+        </ul>
+      </div>      
+    </div>
+    <!-- End Top Bar -->   
+
+    <div class="row column text-center">
+      <h2>Register</h2>
+      <hr>
+    </div>
+
+    <div class="row small-up-2 large-up-4">
+      <form name="register" id="form1" action="register.php" method="post">
+        <div class="registerForm">
+          <label for="prename"><b>Prename:</b></label>
+          <input id="prename" type="text" placeholder="Enter prename" name="prename" required>
+          <label for="name"><b>Surname:</b></label>
+          <input id="name" type="text" placeholder="Enter surname" name="name" required>
+          <label for="email"><b>Email:</b></label>
+          <input id="email" type="email" placeholder="Enter email" name="email" required>
+          <label for="pw"><b>Password:</b></label>
+          <input id="pw" type="password" placeholder="Enter password" pattern="0-9]{5}" name="pw" required>
+          <label for="isCoolLbl"><b>Are you cool?:</b> <input type="checkbox" id="isCool" name="isCool"checked></label>
+          <input type="radio" id="html" name="gender" value="Female">
+          <label for="Female">Female</label><br>
+          <input type="radio" id="css" name="gender" value="Male">
+          <label for="Male">Male</label><br>
+          <input type="submit" value="Submit"><br>	
+          <br>	
+        </div> 
+    </div>
+
+    <div class="callout large secondary">
+      <div class="row">
+        <div class="large-4 columns">
+          <h5>Danke das Sie sich bei dieser Übungsseite Registrieren</h5>
+          <p>Das bedeutet mir sehr viel, denn somit kann ich sehr viel lernen, da ich mit Ihren Daten die verschiedenen Funktionen Testen kann.</p>         
+        </div>        
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+  </body>
+</html>
